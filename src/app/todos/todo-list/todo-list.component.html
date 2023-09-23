@@ -1,0 +1,8 @@
+<ul class="todo-list">
+    <app-todo-item *ngFor="let todo of todos | filtroTodo:filtroActual" [todo]="todo"></app-todo-item>
+</ul>
+<!-- 
+    El pipe pre filtra los todo enviados a los input o componentes hijos.
+    1-actua primero el filtro en los todos
+    2- actua el nfgor para pintar los item
+ -->
